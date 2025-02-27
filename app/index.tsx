@@ -15,7 +15,7 @@ const userObjectDefault: Users = {
 };
 
 export default function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
+  const [isLoggedIn, setIsLoggedIn] = useState<boolean>(true);
   const [username, setUsername] = useState<string>("");
   const [userObject, setUserObject] = useState<Users>(userObjectDefault);
 
