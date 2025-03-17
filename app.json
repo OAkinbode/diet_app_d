@@ -5,7 +5,11 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "plugins": [["expo-router"]],
+    "plugins": [
+      [
+        "expo-router"
+      ]
+    ],
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
@@ -14,13 +18,15 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.akinbodesola.diet-app-d"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.akinbodesola.diet_app_d"
     },
     "web": {
       "favicon": "./assets/favicon.png"

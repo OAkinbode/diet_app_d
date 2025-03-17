@@ -10,6 +10,7 @@ import {
 import { Users } from "../constants/defaultTypes";
 import { Link, useRouter } from "expo-router";
 import ApiCallComponent from "./apiCall";
+import DatabaseCallComponent from "./supabaseCall";
 
 type WelcomeProps = {
   username: string;
@@ -33,7 +34,8 @@ const Welcome: React.FC<WelcomeProps> = ({
   };
   return (
     <View style={styles.container}>
-      <View style={styles.settingsSection}>
+      <DatabaseCallComponent />
+      {/* <View style={styles.settingsSection}>
         <Link href="/settings">
           <Text style={styles.settingsText}>Settings</Text>
         </Link>
@@ -60,7 +62,7 @@ const Welcome: React.FC<WelcomeProps> = ({
             }}
           />
         </View>
-      </View>
+      </View> */}
     </View>
   );
 };
